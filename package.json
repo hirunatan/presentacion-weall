@@ -4,7 +4,7 @@
     "sass": "^1.97.1"
   },
   "scripts": {
-    "build-bulma": "sass --load-path=node_modules presentacion.scss presentacion.css",
+    "build-bulma": "sass --load-path=node_modules --silence-deprecation if-function presentacion.scss presentacion.css",
     "start": "npm run build-bulma -- --watch"
   }
 }

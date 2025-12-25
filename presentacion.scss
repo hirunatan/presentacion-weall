@@ -11,11 +11,17 @@ $white: #FFFFFF;
 
 // Path to Bulma's sass folder
 @use "bulma/sass" with (
-  $family-primary: '"Nunito", sans-serif',
-  $grey-dark: $brown,
-  $grey-light: $beige-light,
-  $primary: $purple,
-  $link: $pink,
+  $title-family: '"Rubik Mono One", monospace',
+  $title-size: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem),
+  $subtitle-family: '"PT Mono", monospace',
+  $subtitle-size: clamp(1rem, 2.0vw + -0.15rem, 4rem),
+  $size-1: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem),
+  $size-2: clamp(1.25rem, 2.1739130435vw + -0.1739130435rem, 4rem),
+  $family-primary: '"Lato", sans-serif',
+  $grey-dark: $darkgrey,
+  $grey-light: $lightgrey,
+  $primary: $black,
+  $link: $blue,
   $control-border-width: 2px,
   $input-shadow: none
 );
