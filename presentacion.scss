@@ -9,53 +9,54 @@ $darkgrey: #A2A0A0;
 $black: #050707;
 $white: #FFFFFF;
 
-// Path to Bulma's sass folder
-@use "bulma/sass" with (
-  $title-family: '"Rubik Mono One", monospace',
-  $title-size: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem),
-  $subtitle-family: '"PT Mono", monospace',
-  $subtitle-size: clamp(1rem, 2.0vw + -0.15rem, 4rem),
-  $size-1: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem),
-  $size-2: clamp(1.25rem, 2.1739130435vw + -0.1739130435rem, 4rem),
-  $family-primary: '"Lato", sans-serif',
-  $grey-dark: $darkgrey,
-  $grey-light: $lightgrey,
-  $primary: $black,
-  $link: $blue,
-  $control-border-width: 2px,
-  $input-shadow: none
-);
-
 // Import the Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=PT+Mono&family=Rubik+Mono+One&display=swap');
 
-.rubik-mono-one-regular {
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
+// .rubik-mono-one-regular {
+//   font-family: "Rubik Mono One", monospace;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+//
+// .lato-regular {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 400;
+//   font-style: normal;
+// }
+//
+// .lato-bold {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 700;
+//   font-style: normal;
+// }
+//
+// .lato-regular-italic {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 400;
+//   font-style: italic;
+// }
+//
+// .pt-mono-regular {
+//   font-family: "PT Mono", monospace;
+//   font-weight: 400;
+//   font-style: normal;
+// }
 
-.lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+// Custom UIKit variables
+$global-font-family: "Lato", sans-serif;
+$base-heading-font-family: "Rubik Mono One", monospace;
+$heading-large-font-size: 3rem;
+$heading-large-font-size-l: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem);
 
-.lato-bold {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+// UIKit default variables and mixins
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
 
-.lato-regular-italic {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.pt-mono-regular {
+// Custom mixin overwrites.
+@mixin hook-text-lead() {
   font-family: "PT Mono", monospace;
-  font-weight: 400;
-  font-style: normal;
 }
+
+// Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
 
