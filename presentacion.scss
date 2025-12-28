@@ -43,6 +43,13 @@ $white: #FFFFFF;
 // }
 
 // Custom UIKit variables
+$global-background: $white;
+$global-color: $black;
+$global-emphasis-color: $black;
+$global-inverse-color: $white;
+$global-primary-background: $yellow;
+$global-secondary-background: $black;
+$global-muted-background: $lightgrey;
 $global-font-family: "Lato", sans-serif;
 $base-heading-font-family: "Rubik Mono One", monospace;
 $heading-large-font-size: 3rem;
@@ -62,6 +69,34 @@ $heading-large-font-size-l: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem
 
 // Site specific classes
 
+.color-yellow {
+  color: $yellow !important;
+}
+.color-red {
+  color: $red !important;
+}
+.color-blue {
+  color: $blue !important;
+}
+.color-green {
+  color: $green !important;
+}
+.color-orange {
+  color: $orange !important;
+}
+.color-lightgrey {
+  color: $lightgrey !important;
+}
+.color-darkgrey {
+  color: $darkgrey !important;
+}
+.color-black {
+  color: $black !important;
+}
+.color-white {
+  color: $white !important;
+}
+
 // See https://www.scientecheasy.com/2024/12/youtube-embed-code.html/
 .video-container {
   position: relative;
@@ -80,3 +115,4 @@ $heading-large-font-size-l: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem
   height: 100%;
   border: 0;
 }
+
