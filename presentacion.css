@@ -2219,21 +2219,21 @@ select.uk-form-width-xsmall {
  */
 .uk-button-primary {
   background-color: #FDDA24;
-  color: #FFFFFF;
+  color: #050707;
   border: 1px solid transparent;
 }
 
 /* Hover */
 .uk-button-primary:hover {
   background-color: rgb(252.7692307692, 213.7307692308, 10.7307692308);
-  color: #FFFFFF;
+  color: #050707;
 }
 
 /* OnClick + Active */
 .uk-button-primary:active,
 .uk-button-primary.uk-active {
   background-color: rgb(235.8461538462, 198.1538461538, 2.1538461538);
-  color: #FFFFFF;
+  color: #050707;
 }
 
 /*

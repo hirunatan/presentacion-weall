@@ -55,6 +55,10 @@ $base-heading-font-family: "Rubik Mono One", monospace;
 $heading-large-font-size: 3rem;
 $heading-large-font-size-l: clamp(1.75rem, 4.347826087vw + -0.347826087rem, 8rem);
 
+$button-primary-color: $global-color;
+$button-primary-hover-color: $global-color;
+$button-primary-active-color: $global-color;
+
 // UIKit default variables and mixins
 @import "uikit/src/scss/variables-theme.scss";
 @import "uikit/src/scss/mixins-theme.scss";
