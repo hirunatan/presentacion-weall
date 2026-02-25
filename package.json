@@ -1,10 +1,10 @@
 {
   "devDependencies": {
     "sass": "^1.97.1",
-    "uikit": "^3.25.4"
+    "uikit": "^3.25.11"
   },
   "scripts": {
-    "build": "sass --load-path=node_modules --silence-deprecation import presentacion.scss presentacion.css",
+    "build": "sass --load-path=./node_modules --silence-deprecation import presentacion.scss presentacion.css",
     "buildjs": "cp node_modules/uikit/dist/js/uikit.min.js js && cp node_modules/uikit/dist/js/uikit-icons.min.js js",
     "start": "npm run build -- --watch"
   }
